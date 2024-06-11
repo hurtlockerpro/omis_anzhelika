@@ -1,0 +1,15 @@
+
+.my-first-header {
+   color: rgba(230, 33, 33, 0.724);  
+}
+
+#my-id-header {
+   font-style: italic; 
+   color: green;   
+}
+
+h1 {
+    font-size: 14px;
+    color: red;
+    margin-left: 50px;
+}
