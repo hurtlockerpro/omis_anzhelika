@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,400;1,900&display=swap');
 
+:root {
+    --custom-gray: #C4C4C4;
+    --custom-violet: #A381D7;
+    --custom-dark-gray: #6d6d6d;
+    --custom-dark-violet: #893DFF;
+    --custom-border-radius: 5px;
+    --color-google: #EF9692;
+    --color-facebook: #2f56a5;
+}
 
 body {
     display: flex;
@@ -20,7 +29,7 @@ h1 {
 
 .main-box{
    width: 80%;
-   height: 350px;
+   height: 500px;
 }
 
 .left-col{
@@ -46,5 +55,146 @@ h1 {
 }
 
 .subtext {
-    
+    color: var(--custom-gray);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.subtext::first-letter {
+    text-transform: uppercase;
+}
+
+.subtext a, form a {
+    color: var(--custom-violet);
+    text-transform: capitalize;
+    font-weight: 400;
+    /* text-decoration: none; */
+}
+
+/* FORM ELEMENTS */
+
+input[name="email"], input[name="password"] {
+    border: 2px solid var(--custom-gray);
+    border-radius: var(--custom-border-radius);
+    width: 100%;
+    height: 40px;
+    outline: none;
+    color: var(--custom-gray);
+    padding-left: 15px;
+    box-sizing: border-box;
+} 
+
+label[for="email"], label[for="password"]{
+    font-weight: 400;
+    margin-bottom: 5px;
+    display: block;
+    text-transform: capitalize;
+}
+
+form div:nth-child(1) {
+    margin-top: 20px;
+}
+
+form div:nth-child(2) {
+    margin-top: 10px;
+}
+
+form div:nth-child(3) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+label[for="password"] a {
+    float: right;
+}
+
+input[name="email"]::placeholder, 
+input[name="password"]::placeholder {
+    color: var(--custom-gray);
+    text-transform: capitalize;
+}
+
+/* checkbox  */
+
+label[for="checkbox"] {
+    color: var(--custom-dark-gray);
+    font-weight: 400;
+}
+
+input[type="checkbox"] {
+    -moz-appearance:none;
+	-webkit-appearance:none;
+	-o-appearance:none;
+	outline: none;
+	content: none;	
+}
+
+input[type="checkbox"]:before {
+	
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+
+    font-size: 16px;
+    color: var(--custom-dark-gray);
+    background: white;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--custom-dark-gray);
+    border-radius: 4px;
+    margin-right: 7px;
+    padding-left: 2px;
+}
+
+input[type=checkbox]:checked:before {
+
+	color: white !important;
+}
+
+/*  BUTTON */
+
+input[type="submit"] {
+    border-radius: var(--custom-border-radius);
+    width: 100%;
+    height: 40px;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--custom-dark-violet);
+    font-weight: 400;
+    border: 0;
+} 
+
+/* SOCIAL LINKS - BUTTONS */
+
+.btn-google, .btn-facebook {
+    display: inline-block;
+    height: 45px;
+    text-decoration: none;
+    width: 45%;
+    border-radius: var(--custom-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-google {
+    border: 2px solid var(--color-google);
+    color: var(--color-google);
+    float: left;
+}
+
+.btn-facebook {
+    border: 2px solid var(--color-facebook);
+    color: var(--color-facebook);
+    float: right;
+}
+
+.alternative-login .fa-brands {
+    margin-right: 5px;
+}
+
+.btn-google:hover {
+    text-decoration: underline;
+
 }

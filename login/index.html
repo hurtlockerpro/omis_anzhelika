@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -12,6 +14,7 @@
         <div class="left-col">
 
             <h1>login</h1>
+
             <div class="subtext">
                 doesn't have an account yet? 
                 <a href="http://" target="_blank">sign up</a>
@@ -20,12 +23,16 @@
             <form action="">
                 <div>
                     <label for="email">email address</label>
-                    <input type="text" name="email" value="" id="email">
+                    <input type="text" name="email" value="" id="email" placeholder="you@domain.com">
                 </div>
+
                 <div>
-                    <label for="password">password</label>
-                    <input type="password" name="password" value="" id="password">
-                   <a href="http://" target="_blank">forgot password?</a>
+                    <label for="password">
+                        password
+                        <a href="http://" target="_blank">forgot password?</a>
+                    </label>
+                    <input type="password" name="password" value="" id="password" placeholder="enter your 6 characters">
+                    
                 </div>
 
                 <div>
@@ -34,10 +41,13 @@
                 </div>
 
                 <input type="submit" value="login">
+
                 <div class="alternative-login">
                     <p>or login with</p>
-                    <input type="button" value="Google">
-                    <input type="button" value="Facebook">
+                    
+                    <a href="https://google.com" target="_blank" class="btn-google"><i class="fa-brands fa-google"></i> google</a>
+                    <a href="https://facebook.com" target="_blank" class="btn-facebook"><i class="fa-brands fa-facebook-f"></i> facebook</a>
+
                 </div>
 
             </form>
