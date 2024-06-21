@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-box {
+    width: 80%;
+    border: 1px solid red;
+    display: flex;
+
+}
+
+/*
+.parent {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+
+    flex-direction: column-reverse;
+    height: 500px;
+}
+
+.child, .child2 {
+    border: 1px solid blue;
+    margin: 5px;
+    align-items: stretch;
+}
+*/
+
+
+.left-col {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.left-col img {
+    margin: 15px;
+}
+
+.right-col{
+    flex-grow: 3;
+}
+
+/*
+.custom-img {
+    width: 250px;
+    height: 350px;
+    border: 1px solid green;
+    background-image: url("http://picsum.photos/id/54/1980/1024");
+    
+    background-position: center center;
+    clip-path: polygon(10% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 88% 75%, 65% 100%, 35% 100%, 0 76%, 10% 50%);
+}
+*/
