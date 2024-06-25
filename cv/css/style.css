@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
 
+:root {
+    --bg-color:#ded6d3;
+
+}
+
+
 * {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -40,15 +46,20 @@ body {
     flex-grow: 2;
     display: flex;
     flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid black;
 }
 
 
 .left-col img {
-    margin: 15px;
+    /*margin: 15px;*/
 }
 
 .right-col{
     flex-grow: 3;
+    padding-left: 25px;
+    box-sizing: border-box;
 }
 
 /*
@@ -62,3 +73,131 @@ body {
     clip-path: polygon(10% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 88% 75%, 65% 100%, 35% 100%, 0 76%, 10% 50%);
 }
 */
+
+/* CONTACT LINKS */ 
+
+.contacts a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.phone::before, .email::before, 
+.web::before, .address::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    width: 24px;
+    height: 24px;
+    background-color: var(--bg-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.phone::before{
+    content: "\f095";
+
+}
+.email::before{
+    content: "\f0e0";
+}
+.web::before {
+    content: "\f57d";
+}
+.address::before {
+    content: "\f3c5";
+}
+
+/* CUSTOM HEADER */
+
+.left-col .block > h1  {
+    font-weight: 700; 
+    text-transform: capitalize;
+    position: relative;
+}
+
+.left-col .block > h1::before {
+    content: ""; /* must */
+    background-color: var(--bg-color);
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 15%;
+    z-index: -1;
+}
+
+/* SECONF HEADER */
+
+.left-col .block ul li h1 {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+}
+
+.block ul {
+    margin: 0;
+    padding: 0;
+}
+
+.block ul li {
+    list-style-type: none;
+}
+
+/* custom-header */
+
+.custom-bg {
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    height: 115px;
+    background-color: var(--bg-color);
+    z-index: -1;
+}
+
+/* RIGHT COLUMN */
+
+.right-col > h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: green;
+}
+
+.right-col > h1::first-letter {
+    font-size: 65px;
+    color: red;
+}
+
+.right-col > h4 {
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* RIGHT COLUMN HEADERS */
+
+.right-col h1:not(.custom-header) {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.header-icon-profile::before, 
+.header-icon-experience::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; 
+    margin-right: 15px;
+}
+.header-icon-profile::before{
+    content: "\f007";
+}
+.header-icon-experience::before {
+    content: "\f0b1";
+}
