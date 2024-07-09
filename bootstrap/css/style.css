@@ -1,0 +1,81 @@
+
+/*  CAROUSEL */
+.carousel-caption {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    /*
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    */
+
+    color: red;
+}
+
+.carousel-caption h5 {
+    font-size: 3.125rem;
+}
+.carousel-caption p {
+    font-size: 1.56rem;
+}
+
+header {
+    position: relative;
+}
+.navbar { 
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-link { 
+    color: white;
+}
+
+.nav-item .active {
+    color: yellow !important;
+    font-weight: 400;
+}
+
+.service-card{
+    border: 0 !important;
+} 
+
+.portfolio-card {
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+
+.card-body {
+    text-align: center;
+}
+
+@media only screen and (max-width: 576px){
+    #navbarSupportedContent {
+        background-color: gainsboro;
+    }
+}
+
+textarea { 
+    height: 9rem;
+}
+
+.contact-row img { 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    filter: grayscale(90%) brightness(0.4);
+    z-index: -1;
+    height: 100%;
+}
+.contact-row {
+    position: relative;
+    padding: 1.56rem;
+    overflow: hidden;
+}

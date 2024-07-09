@@ -23,9 +23,10 @@
     <link rel="stylesheet" href="./css/timeline.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
+      
       <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg ">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button
@@ -40,7 +41,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"
                     >Home</a
@@ -74,17 +75,6 @@
                   <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
             </div>
           </div>
         </nav>
@@ -114,8 +104,8 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="..." class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
+              <img src="https://picsum.photos/id/11/1024/400" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-flex flex-column justify-content-center align-items-center">
                 <h5>First slide label</h5>
                 <p>
                   Some representative placeholder content for the first slide.
@@ -123,8 +113,8 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
+              <img src="https://picsum.photos/id/16/1024/400" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-flex flex-column justify-content-center align-items-center">
                 <h5>Second slide label</h5>
                 <p>
                   Some representative placeholder content for the second slide.
@@ -132,8 +122,8 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
+              <img src="https://picsum.photos/id/28/1024/400" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-flex flex-column justify-content-center align-items-center">
                 <h5>Third slide label</h5>
                 <p>
                   Some representative placeholder content for the third slide.
@@ -163,13 +153,26 @@
       </header>
 
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 text-center mt-5">
           <h1>services</h1>
           <h2>subtitle</h2>
         </div>
         <div class="col-12 col-md-4">
-          <div class="card service-card">
-            <img src="..." class="card-img-top" alt="..." />
+          <div class="card service-card text-center">
+            <img src="https://picsum.photos/25/25?random=1" class=" rounded-circle w-25 m-auto mt-3 mb-3" alt="..." />
+            
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card service-card text-center">
+            <img src="https://picsum.photos/25/25?random=2" class=" rounded-circle w-25 m-auto mt-3 mb-3" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
@@ -181,19 +184,7 @@
         </div>
         <div class="col-12 col-md-4">
           <div class="card service-card">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card service-card">
-            <img src="..." class="card-img-top" alt="..." />
+            <img src="https://picsum.photos/25/25?random=3" class=" rounded-circle w-25 m-auto mt-3 mb-3" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
@@ -205,91 +196,78 @@
         </div>
       </div>
 
-      <div>
+      <div class="text-center">
         <h1>Portfolio</h1>
         <h2>subtitle</h2>
       </div>
-      <div class="row row-cols-1 row-cols-md-3 g-2">
+      <div class="row row-cols-1 row-cols-md-3 g-2 bg-light pt-5 pb-5">
         <div class="col">
           <div class="card portfolio-card">
-            <img src="..." class="card-img-top" alt="..." />
+            <img src="https://picsum.photos/150/150?random=1" class="" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+              <p class="card-text">Some quick</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card portfolio-card">
-            <img src="..." class="card-img-top" alt="..." />
+            <img src="https://picsum.photos/150/150?random=2" class="" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+              <p class="card-text">Some quick </p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card portfolio-card">
-            <img src="..." class="card-img-top" alt="..." />
+            <img src="https://picsum.photos/150/150?random=3" class="" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+              <p class="card-text">Some quick</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card portfolio-card">
-            <img src="..." class="card-img-top" alt="..." />
+            <img src="https://picsum.photos/150/150?random=4" class="" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+              <p class="card-text">Some quick</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card portfolio-card">
-            <img src="..." class="card-img-top" alt="..." />
+            <img src="https://picsum.photos/150/150?random=5" class="" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+              <p class="card-text">Some quick</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card portfolio-card">
-            <img src="..." class="card-img-top" alt="..." />
+            <img src="https://picsum.photos/150/150?random=6" class="" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+              <p class="card-text">Some quick</p>
             </div>
           </div>
         </div>
       </div>
 
+      <div class="text-center">
+        <h1>About</h1>
+        <h2>subtitle</h2>
+      </div>
       <div class="timeline">
         <section id="cd-timeline" class="cd-container">
+          
           <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-picture">
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg"
+                src="https://picsum.photos/50/50?random=1"
                 alt="Picture"
               />
             </div>
@@ -313,7 +291,7 @@
           <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-movie">
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg"
+                src="https://picsum.photos/50/50?random=2"
                 alt="Movie"
               />
             </div>
@@ -336,7 +314,7 @@
           <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-picture">
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg"
+                src="https://picsum.photos/50/50?random=3"
                 alt="Picture"
               />
             </div>
@@ -365,7 +343,7 @@
           <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-location">
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg"
+                src="https://picsum.photos/50/50?random=4"
                 alt="Location"
               />
             </div>
@@ -389,7 +367,7 @@
           <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-location">
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg"
+                src="https://picsum.photos/50/50?random=5"
                 alt="Location"
               />
             </div>
@@ -411,7 +389,7 @@
           <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-movie">
               <img
-                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg"
+                src="https://picsum.photos/50/50?random=6"
                 alt="Movie"
               />
             </div>
@@ -429,16 +407,29 @@
         <!-- cd-timeline -->
       </div>
 
-      <!-- 
+
+    <div class="row contact-row">
+      <img src="https://cdn.britannica.com/37/245037-050-79129D52/world-map-continents-oceans.jpg">
+      <div class="col-12 col-md-6">
         <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-        -->
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name*" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email*" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your phone">
+        </div>
+        
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="mb-3">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message" required></textarea>
+        </div>
+      </div>
+
+    </div>  
+
     </div>
 
     <!-- https://codepen.io/codyhouse/pen/OJgRvj -->
